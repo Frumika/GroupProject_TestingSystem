@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise">
+    <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/0-Common/0-Co-File-03-Menu.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/1-DataBases/1-Db-File-98-ListOfQuestions.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/1-DataBases/1-Db-File-99-ListOfStudents.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/1-WorkWithStudentsList/1-Wwsl-File-99-ListOfStudents.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/2-WorkWithQuestionsList/2-Wwql-File-99-ListOfQuestions.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/1-EmCommon/1-EmCo-File-02-LogInMenu.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/3-EmEditStudentList/3-EmEsl-File-02-OptionMenu.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/3-EmEditStudentList/3-EmEsl-File-03-DeleteMenu.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/3-EmEditStudentList/3-EmEsl-File-04-AddMenu.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/3-EmEditStudentList/3-EmEsl-File-05-ChangeMenu.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/4-EmPrintList/4-EmPsl-02-PrintMenu.cpp" charset="windows-1251" />
+  </component>
+</project>
