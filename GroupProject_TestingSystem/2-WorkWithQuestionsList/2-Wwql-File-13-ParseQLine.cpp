@@ -4,7 +4,7 @@
 /*
  * Предназначена для парсинага строки из 6-Undefined-TextFile-02-ListOfQuestions.txt
  */
-std::string* parseLineOfQuestion(std::string& line)
+std::string* parseQLine(std::string& line)
 {
     std::string* ptrToArray = new std::string[9];
     std::string arrayElem = "";

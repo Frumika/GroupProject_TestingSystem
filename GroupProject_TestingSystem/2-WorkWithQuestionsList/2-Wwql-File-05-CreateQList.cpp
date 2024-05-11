@@ -27,7 +27,7 @@ QList* createQList()
         {
             string* parsedLine;
 
-            parsedLine = parseLineOfQuestion(line);
+            parsedLine = parseQLine(line);
 
             for (int i = 0; i < 9; i++)
             {

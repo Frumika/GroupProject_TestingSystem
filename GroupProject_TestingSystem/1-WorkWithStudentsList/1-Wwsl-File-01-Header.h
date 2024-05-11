@@ -5,4 +5,4 @@
 
 void addSNode(SList& list, Student student);
 
-std::string *ParseString(const std::string &input);
+std::string *parseSLine(const std::string &input);

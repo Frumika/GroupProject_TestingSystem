@@ -22,4 +22,4 @@ void clearQList(QList& list);
 void deleteQList(QList& list);
 
 
-std::string* parseLineOfQuestion(std::string& line);
+std::string* parseQLine(std::string& line);
