@@ -41,6 +41,14 @@
     <ClCompile Include="0-Common\0-Co-File-06-CompareCharArr.cpp" />
     <ClCompile Include="0-Common\0-Co-File-07-EnterSymbol.cpp" />
     <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-04-AddSNode.cpp" />
+    <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-05-CreateSList.cpp" />
+    <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-06-Boostld.cpp" />
+    <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-07-Reduceld.cpp" />
+    <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-08-AddSNodeByld.cpp" />
+    <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-09-FindSNodeByld.cpp" />
+    <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-10-DeleteSNode.cpp" />
+    <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-11-ClearSList.cpp" />
+    <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-12-DeleteList.cpp" />
     <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-13-ParseSLine.cpp" />
     <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-07-ReduceId.cpp" />
     <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-09-FindQNodeById.cpp" />
