@@ -7,29 +7,34 @@
 using namespace std;
 
 
-std::string *parseSLine(const std::string &input) //Парсит строку по '|' и возвращает указатель на массив строк
-{                                        
-    std::vector <string> result;
-    std::string temp;
-    
-    for (char c : input) {
-        if (c == '|') {
+std::string* parseSLine(const std::string& input) //Парсит строку по '|' и возвращает указатель на массив строк
+{
+    std::vector<string> result;
+    std::string temp = "";
+
+    for (char c : input)
+    {
+        if (c == '|' && temp != "")
+        {
             result.push_back(temp);
             temp.clear();
-        } else {
-            temp += c;
+        }
+        else
+        {
+            if (c != '|') temp += c;
         }
     }
 
-    if (!temp.empty()) {
+    if (!temp.empty())
+    {
         result.push_back(temp);
     }
 
-    int size = result.size();
+    int size = int(result.size());
     std::string* arr = new string[size];
 
-    for (int i = 0; i < size; i++) 
+    for (int i = 0; i < size; i++)
         arr[i] = result[i];
-    
+
     return arr;
 }

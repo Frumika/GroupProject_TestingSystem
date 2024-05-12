@@ -73,7 +73,7 @@ void deleteSNodeByPTR(SList& list, SNode* node)
  *
  * Функция не возвращает значений.
  */
-void deleteQNodeById(SList& list, int id)
+void deleteSNodeById(SList& list, int id)
 {
     SNode* current = findSNodeById(list, id);
     deleteSNodeByPTR(list, current);

@@ -15,6 +15,7 @@ void deleteSNodeById(SList& list, int id);
 void boostSNodeId(SNode* node);
 
 void reduseSNodeId(SNode* node);
+
 SList* createSList();
 
 void clearSList(SList& list);

@@ -1,10 +1,10 @@
 #include "1-Wwsl-File-01-Header.h"
 
 /*
- * Функция boostSNodeId уменьшает ID у всех узлов в списке, которые находятся после переданного.
+ * Функция reduseSNodeId уменьшает ID у всех узлов в списке, которые находятся после переданного.
  * У переданного узла ID тоже уменьшается.
  */
-void reduseQNodeId(SNode* node)
+void reduseSNodeId(SNode* node)
 {
     while (node != nullptr)
     {

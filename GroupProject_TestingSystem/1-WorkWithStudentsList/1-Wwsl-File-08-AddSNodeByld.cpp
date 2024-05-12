@@ -24,7 +24,7 @@
  *    addQNodeById(list, question , 12) вернёт 0
  *          
  */
-int addQNodeById(SList& list, Student& student, int id)
+int addSNodeById(SList& list, Student& student, int id)
 {
     if (id >= 1)
     {
