@@ -26,14 +26,14 @@ int _enterName(Student& student);
 
 int _enterSurname(Student& student);
 
-void changeTopic(SNode& current);
+void changeTopic(SList& list, SNode& current);
 
 void showMenuOfChanges(SList& list, int& studentID);
 
-void changeGradeForTopic(SNode& node, int index);
+void changeGradeForTopic(SList& list, SNode& node, int index);
 
-void changeGradeForExam(SNode& node);
+void changeGradeForExam(SList list, SNode& node);
 
-void changeStatusOfExam(SNode& node);
+void changeStatusOfExam(SList list, SNode& node);
 
-void changeExam(SNode& current);
+void changeExam(SList& list, SNode& current);

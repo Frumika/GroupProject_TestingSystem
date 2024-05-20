@@ -24,8 +24,6 @@ void runMenuOfChangeProgressOfStudent()
 
 
     if (studentID >= 1) showMenuOfChanges(*list, studentID);
-
-    _editSList(*list);
-
+    
     clearSList(*list);
 }

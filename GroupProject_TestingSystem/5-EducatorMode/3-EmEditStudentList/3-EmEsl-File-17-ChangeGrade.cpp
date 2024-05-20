@@ -52,7 +52,7 @@ void enterStatus(SNode& node)
 }
 
 
-void changeGradeForTopic(SNode& node, int index)
+void changeGradeForTopic(SList& list, SNode& node, int index)
 {
     cout << "| Текущаяя оценка: ";
     if (node.student.marks[index] == 0) cout << "Нет оценки" << endl;
@@ -62,6 +62,8 @@ void changeGradeForTopic(SNode& node, int index)
     node.student.marks[index] = enterGrade();
     changeMidleGrade(node);
 
+    _editSList(list);
+
     cout
         << "|--------------------------------------------------|" << endl
         << "| Оценка изменена. Нажмите клавишу для продолжения |" << endl
@@ -70,7 +72,7 @@ void changeGradeForTopic(SNode& node, int index)
 }
 
 
-void changeGradeForExam(SNode& node)
+void changeGradeForExam(SList list, SNode& node)
 {
     cout << "| Текущаяя оценка: ";
     if (node.student.examMark == 0) cout << "Нет оценки" << endl;
@@ -79,6 +81,8 @@ void changeGradeForExam(SNode& node)
 
     node.student.examMark = enterGrade();
 
+    _editSList(list);
+
     cout
         << "|--------------------------------------------------|" << endl
         << "| Оценка изменена. Нажмите клавишу для продолжения |" << endl
@@ -86,13 +90,15 @@ void changeGradeForExam(SNode& node)
     _getch();
 }
 
-void changeStatusOfExam(SNode& node)
+void changeStatusOfExam(SList list, SNode& node)
 {
     enterStatus(node);
 
     cout << "| Новый статус: ";
     if (node.student.examStatus == false) cout << "Не сдавал экзамен" << endl;
     else cout << "Сдал экзамен" << endl;
+
+    _editSList(list);
 
     cout
         << "|--------------------------------------------------|" << endl

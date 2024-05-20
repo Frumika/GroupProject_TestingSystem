@@ -4,10 +4,11 @@
 
 using namespace std;
 
+
 /*
  * 
  */
-void changeTopic(SNode& current)
+void changeTopic(SList& list, SNode& current)
 {
     char button;
     bool condition;
@@ -51,49 +52,49 @@ void changeTopic(SNode& current)
         {
         case '1':
             {
-                changeGradeForTopic(current, 0);
+                changeGradeForTopic(list, current, 0);
             }
             break;
 
         case '2':
             {
-                changeGradeForTopic(current, 1);
+                changeGradeForTopic(list, current, 1);
             }
             break;
 
         case '3':
             {
-                changeGradeForTopic(current, 2);
+                changeGradeForTopic(list, current, 2);
             }
             break;
 
         case '4':
             {
-                changeGradeForTopic(current, 3);
+                changeGradeForTopic(list, current, 3);
             }
             break;
 
         case '5':
             {
-                changeGradeForTopic(current, 4);
+                changeGradeForTopic(list, current, 4);
             }
             break;
 
         case '6':
             {
-                changeGradeForTopic(current, 5);
+                changeGradeForTopic(list, current, 5);
             }
             break;
 
         case '7':
             {
-                changeGradeForTopic(current, 6);
+                changeGradeForTopic(list, current, 6);
             }
             break;
 
         case '8':
             {
-                changeGradeForTopic(current, 7);
+                changeGradeForTopic(list, current, 7);
             }
             break;
         }

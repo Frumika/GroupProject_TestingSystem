@@ -35,13 +35,13 @@ void showMenuOfChanges(SList& list, int& studentID)
         {
         case '1':
             {
-                changeTopic(*current);
+                changeTopic(list, *current);
             }
             break;
 
         case '2':
             {
-                changeExam(*current);
+                changeExam(list, *current);
             }
             break;
         }

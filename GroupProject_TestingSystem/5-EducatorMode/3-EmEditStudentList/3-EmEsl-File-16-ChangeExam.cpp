@@ -4,7 +4,7 @@
 
 using namespace std;
 
-void changeExam(SNode& current)
+void changeExam(SList& list, SNode& current)
 {
     char button;
     bool condition;
@@ -33,13 +33,13 @@ void changeExam(SNode& current)
         {
         case '1':
             {
-                changeGradeForExam(current);
+                changeGradeForExam(list, current);
             }
             break;
 
         case '2':
             {
-                changeStatusOfExam(current);
+                changeStatusOfExam(list, current);
             }
             break;
         }
