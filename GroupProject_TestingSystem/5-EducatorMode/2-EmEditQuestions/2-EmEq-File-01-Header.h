@@ -2,7 +2,12 @@
 
 #include "../1-EmCommon/1-EmCo-File-01-Header.h"
 #include <string>
-
-std::vector<Question> parseList(std::string filename);
+#include <iostream>
+#include <conio.h>
 
 std::string* parseLine(std::string line);
+void runAddQ();
+void runEditQMenu2();
+void runDelQMenu();
+void exportQuestionsToFile(const QList& list);
+void printQList(QList* list);

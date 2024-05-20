@@ -64,8 +64,11 @@
     <ClCompile Include="5-EducatorMode\1-EmCommon\1-EmCo-File-02-LogInMenu.cpp" />
     <ClCompile Include="5-EducatorMode\1-EmCommon\1-EmCo-File-03-OptionMenu.cpp" />
     <ClCompile Include="5-EducatorMode\2-EmEditQuestions\2-EmEq-File-02-Menu.cpp" />
-    <ClCompile Include="5-EducatorMode\2-EmEditQuestions\2-EmEq-File-03-ParseList.cpp" />
-    <ClCompile Include="5-EducatorMode\2-EmEditQuestions\2-EmEq-File-04-ParseLine.cpp" />
+    <ClCompile Include="5-EducatorMode\2-EmEditQuestions\2-EmEq-File-03-AddQMenu.cpp" />
+    <ClCompile Include="5-EducatorMode\2-EmEditQuestions\2-EmEq-File-04-EditQMenu.cpp" />
+    <ClCompile Include="5-EducatorMode\2-EmEditQuestions\2-EmEq-File-05-DelQMenu.cpp" />
+    <ClCompile Include="5-EducatorMode\2-EmEditQuestions\2-EmEq-File-06-ExportToFile.cpp" />
+    <ClCompile Include="5-EducatorMode\2-EmEditQuestions\2-EmEq-File-07-PrintQList.cpp" />
     <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-02-OptionMenu.cpp" />
     <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-03-DeleteMenu.cpp" />
     <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-04-AddMenu.cpp" />
