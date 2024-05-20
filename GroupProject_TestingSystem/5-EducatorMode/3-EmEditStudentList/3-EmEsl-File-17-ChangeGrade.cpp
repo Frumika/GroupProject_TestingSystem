@@ -30,6 +30,7 @@ void changeMidleGrade(SNode& node)
 {
     int count = 0;
     int sum = 0;
+    double middleMark = 0;
 
     for (int i = 0; i < 8; i++)
     {
@@ -40,8 +41,8 @@ void changeMidleGrade(SNode& node)
         }
     }
 
-    if (count != 0) node.student.middleMark = sum / count;
-    else node.student.middleMark = 0;
+    if (count != 0) middleMark = double(sum) / count;
+    node.student.middleMark = middleMark;
 }
 
 void enterStatus(SNode& node)
@@ -95,7 +96,7 @@ void changeStatusOfExam(SNode& node)
 
     cout
         << "|--------------------------------------------------|" << endl
-        << "| Оценка изменена. Нажмите клавишу для продолжения |" << endl
+        << "|  Статус изменён. Нажмите клавишу для продолжения |" << endl
         << "|--------------------------------------------------|" << endl;
     _getch();
 }
