@@ -10,6 +10,21 @@ using namespace std;
  */
 void runMenuOfAddOfStudent()
 {
-    cout << "добавление" << endl;
-    system("pause");
+    SList* list = createSList();
+
+    int isAdd = _addStudent(*list);
+
+    if (isAdd == 1)
+    {
+        _editSList(*list);
+        
+        cout
+            << "|--------------------------------------------------|" << endl
+            << "|                Студент добавлен                  |" << endl
+            << "|--------------------------------------------------|" << endl
+            << "|      Для продолжения нажмите любую клавишу       |" << endl
+            << "|--------------------------------------------------|" << endl;
+        _getch();
+    }
+    clearSList(*list);
 }

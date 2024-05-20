@@ -64,10 +64,22 @@
     <ClCompile Include="5-EducatorMode\1-EmCommon\1-EmCo-File-02-LogInMenu.cpp" />
     <ClCompile Include="5-EducatorMode\1-EmCommon\1-EmCo-File-03-OptionMenu.cpp" />
     <ClCompile Include="5-EducatorMode\2-EmEditQuestions\2-EmEq-File-02-Menu.cpp" />
+    <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-17-ChangeGrade.cpp" />
+    <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-12-EnterName.cpp" />
     <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-02-OptionMenu.cpp" />
     <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-03-DeleteMenu.cpp" />
     <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-04-AddMenu.cpp" />
     <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-05-ChangeMenu.cpp" />
+    <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-06-SearchLogin.cpp" />
+    <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-08-DeleteStudentByLogin.cpp" />
+    <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-07-EnterInfo.cpp" />
+    <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-09-EditListOdStudent.cpp" />
+    <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-10-AddStudent.cpp" />
+    <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-11-EnterPassword.cpp" />
+    <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-13-EnterSurname.cpp" />
+    <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-14-MenuOfChanges.cpp" />
+    <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-15-ChangeTopic.cpp" />
+    <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-16-ChangeExam.cpp" />
     <ClCompile Include="5-EducatorMode\4-EmPrintList\4-EmPsl-02-PrintMenu.cpp" />
   </ItemGroup>
   <ItemGroup>

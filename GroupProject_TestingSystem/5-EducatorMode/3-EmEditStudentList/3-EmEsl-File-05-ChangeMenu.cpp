@@ -10,6 +10,22 @@ using namespace std;
  */
 void runMenuOfChangeProgressOfStudent()
 {
-    cout << "изменение" << endl;
-    system("pause");
+    SList* list = createSList();
+
+    int studentID;
+    int isLoginTrue;
+
+    do
+    {
+        studentID = enterInfo(*list, true, false);
+        if (studentID == 0) isLoginTrue = false;
+    }
+    while (studentID == 0);
+
+
+    if (studentID >= 1) showMenuOfChanges(*list, studentID);
+
+    _editSList(*list);
+
+    clearSList(*list);
 }
