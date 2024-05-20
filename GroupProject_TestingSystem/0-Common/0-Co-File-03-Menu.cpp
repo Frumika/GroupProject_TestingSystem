@@ -8,7 +8,7 @@ void runMainMenu()
 {
     char button;
     bool condition;
-    
+
     do
     {
         system("cls");
@@ -33,9 +33,7 @@ void runMainMenu()
         {
         case '1':
             {
-                cout << "1" << endl;
-                cout << "НАжмите для продолжения" << endl;
-                _getch();
+                runStudentLogInMenu();
             };
             break;
         case '2':

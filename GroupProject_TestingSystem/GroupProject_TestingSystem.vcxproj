@@ -41,7 +41,25 @@
     <ClCompile Include="0-Common\0-Co-File-06-CompareCharArr.cpp" />
     <ClCompile Include="0-Common\0-Co-File-07-EnterSymbol.cpp" />
     <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-04-AddSNode.cpp" />
+    <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-05-CreateSList.cpp" />
+    <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-06-Boostld.cpp" />
+    <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-07-Reduceld.cpp" />
+    <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-08-AddSNodeByld.cpp" />
+    <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-09-FindSNodeByld.cpp" />
+    <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-10-DeleteSNode.cpp" />
+    <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-11-ClearSList.cpp" />
+    <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-12-DeleteList.cpp" />
+    <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-13-ParseSLine.cpp" />
+    <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-07-ReduceId.cpp" />
+    <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-09-FindQNodeById.cpp" />
     <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-04-AddQNode.cpp" />
+    <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-05-CreateQList.cpp" />
+    <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-08-AddQNodeById.cpp" />
+    <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-06-BoostId.cpp" />
+    <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-10-DeleteQNode.cpp" />
+    <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-11-ClearQList.cpp" />
+    <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-12-DeleteList.cpp" />
+    <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-13-ParseQLine.cpp" />
     <ClCompile Include="4-StudentMode\4-Sm-File-02-Menu.cpp" />
     <ClCompile Include="5-EducatorMode\1-EmCommon\1-EmCo-File-02-LogInMenu.cpp" />
     <ClCompile Include="5-EducatorMode\1-EmCommon\1-EmCo-File-03-OptionMenu.cpp" />
@@ -55,8 +73,8 @@
     <ClCompile Include="5-EducatorMode\4-EmPrintList\4-EmPsl-02-PrintMenu.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="1-WorkWithStudentsList\1-Wwsl-File-99-ListOfStudents.txt" />
-    <Content Include="2-WorkWithQuestionsList\2-Wwql-File-99-ListOfQuestions.txt" />
+    <Content Include="6-Undefined-TextFile-01-ListOfStudents.txt" />
+    <Content Include="6-Undefined-TextFile-02-ListOfQuestions.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

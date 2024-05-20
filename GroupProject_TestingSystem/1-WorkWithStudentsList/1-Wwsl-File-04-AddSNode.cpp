@@ -27,6 +27,6 @@ void addSNode(SList& list, Student student)
         node->prev = current;
 
         node->student.id = current->student.id + 1;
-        node = list.tail;
+        list.tail = node;
     }
 }
