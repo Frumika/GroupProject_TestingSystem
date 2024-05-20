@@ -42,7 +42,7 @@ void runEditStudentListMenu()
             break;
         case '3': { runMenuOfChangeProgressOfStudent(); }
             break;
-        case '4': { runMenuOfPrintListOfStudent(); }
+        case '4': {runMenuOfPrintListOfStudent(); }
             break;
         }
     }

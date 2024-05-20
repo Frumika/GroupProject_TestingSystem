@@ -69,6 +69,13 @@
     <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-04-AddMenu.cpp" />
     <ClCompile Include="5-EducatorMode\3-EmEditStudentList\3-EmEsl-File-05-ChangeMenu.cpp" />
     <ClCompile Include="5-EducatorMode\4-EmPrintList\4-EmPsl-02-PrintMenu.cpp" />
+    <ClCompile Include="5-EducatorMode\4-EmPrintList\4-EmPsl-03-PrintList.cpp" />
+    <ClCompile Include="5-EducatorMode\4-EmPrintList\4-EmPsl-04-PrintOneTheme.cpp" />
+    <ClCompile Include="5-EducatorMode\4-EmPrintList\4-EmPsl-06-PrintMiddle.cpp" />
+    <ClCompile Include="5-EducatorMode\4-EmPrintList\4-EmPsl-07-PrintTests.cpp" />
+    <ClCompile Include="5-EducatorMode\4-EmPrintList\4-EmPsl-08-MarkFilter.cpp" />
+    <ClCompile Include="5-EducatorMode\4-EmPrintList\4-EmPsl-09-Sort.cpp" />
+    <ClCompile Include="5-EducatorMode\4-EmPrintList\4-EmPsl-PrintExamMark.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="6-Undefined-TextFile-01-ListOfStudents.txt" />
