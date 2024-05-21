@@ -42,6 +42,9 @@
     <ClCompile Include="0-Common\0-Co-File-07-EnterSymbol.cpp" />
     <ClCompile Include="1-WorkWithStudentsList\1-Wwsl-File-04-AddSNode.cpp" />
     <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-04-AddQNode.cpp" />
+    <ClCompile Include="3-CryptInfo\3-Ci-File-02-KeyGen.cpp" />
+    <ClCompile Include="3-CryptInfo\3-Ci-File-03-Encrypter.cpp" />
+    <ClCompile Include="3-CryptInfo\3-Ci-File-04-Decrypter.cpp" />
     <ClCompile Include="4-StudentMode\4-Sm-File-02-Menu.cpp" />
     <ClCompile Include="5-EducatorMode\1-EmCommon\1-EmCo-File-02-LogInMenu.cpp" />
     <ClCompile Include="5-EducatorMode\1-EmCommon\1-EmCo-File-03-OptionMenu.cpp" />
