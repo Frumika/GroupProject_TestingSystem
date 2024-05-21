@@ -6,19 +6,33 @@
 
 
 /*
- * Р¤СѓРЅРєС†РёСЏ РїСЂРёРЅРёРјР°РµС‚ СЃСЃС‹Р»РєСѓ РЅР° Р°РІС‚РѕСЂРёР·РѕРІР°РЅРЅРѕРіРѕ СЃС‚СѓРґРµРЅС‚Р°.
- * РЎС‚СѓРґРµРЅС‚ РЅРµ РёРјРµРµС‚ СЃРІСЏР·Рё СЃРѕ СЃРїРёСЃРєРѕРј СЃС‚СѓРґРµРЅС‚РѕРІ. РџСЂРё РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё СЃРїРёСЃРѕРє РЅР°РґРѕ СЃРѕР·РґР°С‚СЊ СЃР°РјРѕРјСѓ.
- * РќР°Р№С‚Рё СЃС‚СѓРґРµРЅС‚Р° РІ СЃРѕР·РґР°РЅРЅРѕРј СЃРїРёСЃРєРµ РјРѕР¶РЅРѕ РїСЂРё РїРѕРјРѕС‰Рё findSNodeById.
+ * Функция принимает ссылку на авторизованного студента.
+ * Студент не имеет связи со списком студентов. При необходимости список надо создать самому.
+ * Найти студента в созданном списке можно при помощи findSNodeById.
  */
 void runExamMode(Student& student)
 {
-    student.id = 1;
-    student.examMark = 0;
-    student.examStatus = 0;
+    char button;
+    
+    if (student.examStatus == 1)
+    {
+        system("cls");
+        
+        std::cout
+            << "|--------------------------------------------------|\n"
+            << "| Повторная сдача итогового теста невозможна.      |\n"
+               "| За помощь обратитесь к преподавателю.            |\n"
+            << "|--------------------------------------------------|\n"
+            << "|--------------------------------------------------|\n"
+            << "|  >>> Для продолжения нажмите любую клавишу <<<   |\n"
+            << "|--------------------------------------------------|\n";
+
+        button = _getch();
+        return;
+    }
 
     QList* QuestionList = createQList();
 
-    char button;
     int mistakes = 0;
 
     std::vector<Question> examQuestions = createExamQuestions(*QuestionList);
@@ -31,7 +45,7 @@ void runExamMode(Student& student)
         printQText(examQuestions[i]);
         printAnsOptions(examQuestions[i]);
 
-        std::cout << "| пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ: ";
+        std::cout << "| Ваш ответ: ";
 
         button = _getch();
 
@@ -43,7 +57,6 @@ void runExamMode(Student& student)
     }
 
 
-
     int mark;
 
     if (mistakes <= 4) mark = 5;
@@ -53,19 +66,22 @@ void runExamMode(Student& student)
 
     printResult(mistakes, wrongQuestions, mark);
 
-    SList *StudentList = createSList();
+    SList* StudentList = createSList();
 
-    SNode *AuthorizedStudent = findSNodeById(*StudentList, student.id);
+    SNode* AuthorizedStudent = findSNodeById(*StudentList, student.id);
 
+    student.examMark = mark;
+    student.examStatus = 1;
+    
     AuthorizedStudent->student.examMark = mark;
     AuthorizedStudent->student.examStatus = 1;
 
     _editSList(*StudentList);
-    
+
     std::cout
-    << "|--------------------------------------------------|\n"
-    << "|  >>> пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ <<<   |\n"
-    << "|--------------------------------------------------|\n";
+        << "|--------------------------------------------------|\n"
+        << "|  >>> Для продолжения нажмите любую клавишу <<<   |\n"
+        << "|--------------------------------------------------|\n";
 
     button = _getch();
 }
