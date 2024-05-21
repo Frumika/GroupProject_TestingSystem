@@ -65,6 +65,10 @@
     <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-12-DeleteList.cpp" />
     <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-13-ParseQLine.cpp" />
     <ClCompile Include="4-StudentMode\1-SmLogIn\1-SmLi-File-02-LogIn.cpp" />
+    <ClCompile Include="4-StudentMode\4-SmExam\4-SmEx-File-02-Menu.cpp" />
+    <ClCompile Include="4-StudentMode\4-SmExam\4-SmEx-File-03-createExamQ.cpp" />
+    <ClCompile Include="4-StudentMode\4-SmExam\4-SmEx-File-04-PrintQ.cpp" />
+    <ClCompile Include="4-StudentMode\4-SmExam\4-SmEx-File-05-PrintResult.cpp" />
     <ClCompile Include="5-EducatorMode\1-EmCommon\1-EmCo-File-02-LogInMenu.cpp" />
     <ClCompile Include="5-EducatorMode\1-EmCommon\1-EmCo-File-03-OptionMenu.cpp" />
     <ClCompile Include="5-EducatorMode\2-EmEditQuestions\2-EmEq-File-02-Menu.cpp" />
