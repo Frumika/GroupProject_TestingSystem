@@ -11,13 +11,19 @@
     <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/4-StudentMode/4-SmExam/4-SmEx-File-05-PrintResult.cpp" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/1-EmCommon/1-EmCo-File-02-LogInMenu.cpp" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/2-EmEditQuestions/2-EmEq-File-02-Menu.cpp" charset="windows-1251" />
-    <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/2-EmEditQuestions/2-EmEq-File-06-ExportToFile.cpp" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/3-EmEditStudentList/3-EmEsl-File-02-OptionMenu.cpp" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/3-EmEditStudentList/3-EmEsl-File-03-DeleteMenu.cpp" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/3-EmEditStudentList/3-EmEsl-File-04-AddMenu.cpp" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/3-EmEditStudentList/3-EmEsl-File-05-ChangeMenu.cpp" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/3-EmEditStudentList/3-EmEsl-File-16-ChangeExam.cpp" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/4-EmPrintList/4-EmPsl-02-PrintMenu.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/4-EmPrintList/4-EmPsl-03-PrintList.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/4-EmPrintList/4-EmPsl-04-PrintOneTheme.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/4-EmPrintList/4-EmPsl-06-PrintMiddle.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/4-EmPrintList/4-EmPsl-07-PrintTests.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/4-EmPrintList/4-EmPsl-08-MarkFilter.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/4-EmPrintList/4-EmPsl-09-Sort.cpp" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/5-EducatorMode/4-EmPrintList/4-EmPsl-PrintExamMark.cpp" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/6-Undefined-TextFile-01-ListOfStudents.txt" charset="windows-1251" />
     <file url="file://$PROJECT_DIR$/GroupProject_TestingSystem/6-Undefined-TextFile-02-ListOfQuestions.txt" charset="windows-1251" />
   </component>
