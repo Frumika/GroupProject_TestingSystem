@@ -15,5 +15,4 @@
 void clearSList(SList& list)
 {
     while (list.head != nullptr) deleteSNodeByPTR(list, list.head);
-    delete &list;
 }

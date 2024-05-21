@@ -1,4 +1,4 @@
-ï»¿#include "4-EmPsl-01-Header.h"
+#include "4-EmPsl-01-Header.h"
 #include <iostream>
 #include <conio.h>
 #include <iomanip>
@@ -6,7 +6,7 @@ using namespace std;
 void PrintExamMark(SList list,int mark)
 {
     if (list.head == NULL) {
-        cout << "Ð¡Ð¿Ð¸ÑÐ¾Ðº Ð¿ÑƒÑÑ‚" << endl;
+        cout << "Ñïèñîê ïóñò" << endl;
         return;
     }
     bool fl=false;
@@ -15,11 +15,11 @@ void PrintExamMark(SList list,int mark)
     int surnamel=MaxLenSurname(list);
     int k=namel+surnamel+13+6+2;
     PrintPodcher(k,namel,surnamel,true);
-    cout<< "|"<<setw(2)<<left<<"â„–"<<"|";
+    cout<< "|"<<setw(2)<<left<<"¹"<<"|";
     cout<<setw(2)<<left<<"ID"<<"|";
-    cout<<setw(namel)<<left<<"Ð˜Ð¼Ñ"<<"|";
-    cout<<setw(surnamel)<<left<<"Ð¤Ð°Ð¼Ð¸Ð»Ð¸Ñ"<<"|";
-    cout<<setw(13)<<left<<"Ð˜Ñ‚Ð¾Ð³Ð¾Ð²Ñ‹Ð¹ Ñ‚ÐµÑÑ‚"<<"|"<<endl;
+    cout<<setw(namel)<<left<<"Èìÿ"<<"|";
+    cout<<setw(surnamel)<<left<<"Ôàìèëèÿ"<<"|";
+    cout<<setw(13)<<left<<"Èòîãîâûé òåñò"<<"|"<<endl;
     PrintPodcher(k,namel,surnamel,true);
     int i=0;
     while (tmp->next != nullptr)
@@ -36,7 +36,7 @@ void PrintExamMark(SList list,int mark)
         }
         else
         {
-            cout<<setw(3)<<left<<""<<setw(10)<<left<<"ÐÐµ ÑÐ´Ð°Ð½" << "|"<<endl;
+            cout<<setw(3)<<left<<""<<setw(10)<<left<<"Íå ñäàí" << "|"<<endl;
         }
         PrintPodcher(k,namel,surnamel,false);
         fl=true;
@@ -56,10 +56,10 @@ void PrintExamMark(SList list,int mark)
         }
         else
         {
-            cout<<setw(3)<<left<<""<<setw(10)<<left<<"ÐÐµ ÑÐ´Ð°Ð½" << "|"<<endl;
+            cout<<setw(3)<<left<<""<<setw(10)<<left<<"Íå ñäàí" << "|"<<endl;
         }
         PrintPodcher(k,namel,surnamel,true);
         fl=true;
     }
-    if (fl==false){cout<<"|      ÐÐµÑ‚ ÑÑ‚ÑƒÐ´ÐµÐ½Ñ‚Ð¾Ð² Ñ Ð¾Ñ†ÐµÐ½ÐºÐ¾Ð¹ "<<mark<<"      |"<<endl;PrintPodcher(k,namel,surnamel,true);}
+    if (fl==false){cout<<"|      Íåò ñòóäåíòîâ ñ îöåíêîé "<<mark<<"      |"<<endl;PrintPodcher(k,namel,surnamel,true);}
 }

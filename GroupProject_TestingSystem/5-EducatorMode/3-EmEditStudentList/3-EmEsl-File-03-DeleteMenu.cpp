@@ -41,5 +41,5 @@ void runMenuOfDeleteStudent()
         _getch();
     }
 
-    clearSList(*list);
+    deleteSList(*list);
 }

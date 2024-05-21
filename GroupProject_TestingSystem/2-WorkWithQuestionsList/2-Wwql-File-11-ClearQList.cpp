@@ -15,5 +15,4 @@
 void clearQList(QList& list)
 {
     while (list.head != nullptr) deleteQNodeByPTR(list, list.head);
-    delete &list;
 }

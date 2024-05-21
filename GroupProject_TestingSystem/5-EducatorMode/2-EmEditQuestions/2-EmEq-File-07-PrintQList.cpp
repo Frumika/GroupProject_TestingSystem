@@ -11,8 +11,8 @@ void printQList(QList* list)
         int id = currentQNode->question.id;
         std::string idPrefix = "| " + std::to_string(id) + ". ";
         std::string spacePrefix = "|     ";
-        int prefixLength = idPrefix.length();
-        int spacePrefixLength = spacePrefix.length();
+        int prefixLength = size_t(idPrefix.length());
+        int spacePrefixLength = size_t(spacePrefix.length());
 
         std::string::size_type pos = 0;
         bool firstLine = true;
@@ -43,7 +43,7 @@ void printQList(QList* list)
                 }
 
                 line += word;
-                currentLineLength += word.length();
+                currentLineLength += size_t(word.length());
                 pos = nextSpace + 1;
             }
 

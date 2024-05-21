@@ -64,7 +64,15 @@
     <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-11-ClearQList.cpp" />
     <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-12-DeleteList.cpp" />
     <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-13-ParseQLine.cpp" />
+    <ClCompile Include="4-StudentMode\0-SmCommon\0-SmCo-File-02-Menu.cpp" />
     <ClCompile Include="4-StudentMode\1-SmLogIn\1-SmLi-File-02-LogIn.cpp" />
+    <ClCompile Include="4-StudentMode\1-SmLogIn\1-SmLi-File-03-EnterLogin.cpp" />
+    <ClCompile Include="4-StudentMode\1-SmLogIn\1-SmLi-File-04-SearchLogin.cpp" />
+    <ClCompile Include="4-StudentMode\1-SmLogIn\1-SmLi-File-05-EnterPassword.cpp" />
+    <ClCompile Include="4-StudentMode\1-SmLogIn\1-SmLi-File-06-SearchPassword.cpp" />
+    <ClCompile Include="4-StudentMode\2-SmTraining\2-SmTr-File-02-Menu.cpp" />
+    <ClCompile Include="4-StudentMode\3-SmTest\3-SmTe-File-02-Menu.cpp" />
+    <ClCompile Include="4-StudentMode\4-SmExam\4-SmEx-File-02-Menu.cpp" />
     <ClCompile Include="5-EducatorMode\1-EmCommon\1-EmCo-File-02-LogInMenu.cpp" />
     <ClCompile Include="5-EducatorMode\1-EmCommon\1-EmCo-File-03-OptionMenu.cpp" />
     <ClCompile Include="5-EducatorMode\2-EmEditQuestions\2-EmEq-File-02-Menu.cpp" />

@@ -1,4 +1,4 @@
-п»ї#include <complex.h>
+#include <complex.h>
 
 #include "4-EmPsl-01-Header.h"
 #include <iostream>
@@ -8,7 +8,7 @@ using namespace std;
 void PrintSelectedTheme(SList list,int num,int mark)
 {
     if (list.head == NULL) {
-        cout << "РЎРїРёСЃРѕРє РїСѓСЃС‚" << endl;
+        cout << "Список пуст" << endl;
         return;
     }
     bool fl=false;
@@ -17,11 +17,11 @@ void PrintSelectedTheme(SList list,int num,int mark)
     int surnamel=MaxLenSurname(list);
     int k=namel+surnamel+7+6+2;
     PrintPodcher(k,namel,surnamel,true);
-    cout<< "|"<<setw(2)<<left<<"в„–"<<"|";
+    cout<< "|"<<setw(2)<<left<<"№"<<"|";
     cout<<setw(2)<<left<<"ID"<<"|";
-    cout<<setw(namel)<<left<<"РРјСЏ"<<"|";
-    cout<<setw(surnamel)<<left<<"Р¤Р°РјРёР»РёСЏ"<<"|";
-    cout<<setw(6)<<left<<"РўРµСЃС‚"<<num<<"|"<<endl;
+    cout<<setw(namel)<<left<<"Имя"<<"|";
+    cout<<setw(surnamel)<<left<<"Фамилия"<<"|";
+    cout<<setw(6)<<left<<"Тест"<<num<<"|"<<endl;
     PrintPodcher(k,namel,surnamel,true);
     int i=0;
     while (tmp->next != nullptr)
@@ -33,7 +33,7 @@ void PrintSelectedTheme(SList list,int num,int mark)
             cout<<setw(namel)<<left<<(tmp->student.name) << "|";
             cout<<setw(surnamel)<<left<<(tmp->student.surname) << "|";
             if(tmp->student.marks[num-1]){cout<<setw(3)<<left<<""<<setw(4)<<left<<(tmp->student.marks[num-1])<< "|"<<endl;}
-            else{cout<<setw(7)<<left<<"РќРµ СЃРґР°РЅ"<< "|"<<endl;}
+            else{cout<<setw(7)<<left<<"Не сдан"<< "|"<<endl;}
             fl=true;
             PrintPodcher(k,namel,surnamel,false);
         }
@@ -46,11 +46,11 @@ void PrintSelectedTheme(SList list,int num,int mark)
     cout<<setw(namel)<<left<<(tmp->student.name) << "|";
     cout<<setw(surnamel)<<left<<(tmp->student.surname) << "|";
         if(tmp->student.marks[num-1]){cout<<setw(3)<<left<<""<<setw(4)<<left<<(tmp->student.marks[num-1])<< "|"<<endl;}
-        else{cout<<setw(7)<<left<<"РќРµ СЃРґР°РЅ"<< "|"<<endl;}
+        else{cout<<setw(7)<<left<<"Не сдан"<< "|"<<endl;}
         fl=true;
         PrintPodcher(k,namel,surnamel,true);
     }
-    if (fl==false){cout<<"|   РќРµС‚ СЃС‚СѓРґРµРЅС‚РѕРІ СЃ РѕС†РµРЅРєРѕР№ "<<mark<<"   |"<<endl;PrintPodcher(k,namel,surnamel,true);}
+    if (fl==false){cout<<"|   Нет студентов с оценкой "<<mark<<"   |"<<endl;PrintPodcher(k,namel,surnamel,true);}
 }
 int PrintOneTheme()
 {
@@ -59,17 +59,17 @@ int PrintOneTheme()
     system("cls");
     cout
            << "|--------------------------------------------------|" << endl
-           << "|              >>>  Р’С‹Р±РµСЂРёС‚Рµ С‚РµРјСѓ  <<<             |" << endl
+           << "|              >>>  Выберите тему  <<<             |" << endl
            << "|--------------------------------------------------|" << endl
-           << "| 1. РўРµРјР° 1: Р¦РёРєР»С‹                                 |" << endl
-           << "| 2. РўРµРјР° 2: РњР°СЃСЃРёРІС‹                               |" << endl
-           << "| 3. РўРµРјР° 3: РЎС‚СЂРѕРєРё                                |" << endl
-           << "| 4. РўРµРјР° 4: Р РµРєСѓСЂСЃРёСЏ                              |" << endl
-           << "| 5. РўРµРјР° 5: РЎС‚СЂСѓРєС‚СѓСЂС‹                             |" << endl
-           << "| 6. РўРµРјР° 6: Р¤Р°Р№Р»С‹                                 |" << endl
-           << "| 7. РўРµРјР° 7: РђРґСЂРµСЃР° Рё СѓРєР°Р·Р°С‚РµР»Рё                    |" << endl
-           << "| 8. РўРµРјР° 8: Р”РёРЅР°РјРёС‡РµСЃРєР°СЏ РїР°РјСЏС‚СЊ                   |" << endl
-           << "| 0. Р’РµСЂРЅСѓС‚СЊСЃСЏ                                     |" << endl
+           << "| 1. Тема 1: Циклы                                 |" << endl
+           << "| 2. Тема 2: Массивы                               |" << endl
+           << "| 3. Тема 3: Строки                                |" << endl
+           << "| 4. Тема 4: Рекурсия                              |" << endl
+           << "| 5. Тема 5: Структуры                             |" << endl
+           << "| 6. Тема 6: Файлы                                 |" << endl
+           << "| 7. Тема 7: Адреса и указатели                    |" << endl
+           << "| 8. Тема 8: Динамическая память                   |" << endl
+           << "| 0. Вернуться                                     |" << endl
            << "|--------------------------------------------------|" << endl;
     do
     {

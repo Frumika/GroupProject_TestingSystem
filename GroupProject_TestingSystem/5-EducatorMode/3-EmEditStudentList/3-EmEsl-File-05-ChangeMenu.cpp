@@ -25,5 +25,5 @@ void runMenuOfChangeProgressOfStudent()
 
     if (studentID >= 1) showMenuOfChanges(*list, studentID);
     
-    clearSList(*list);
+    deleteSList(*list);
 }

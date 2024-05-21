@@ -33,10 +33,7 @@ void runMainMenu()
         {
         case '1':
             {
-                cout << "Ёкстренно реализуем" << endl;
-                
-                system("pause");
-                //runStudentLogInMenu();
+                logInStudent();
             };
             break;
         case '2':

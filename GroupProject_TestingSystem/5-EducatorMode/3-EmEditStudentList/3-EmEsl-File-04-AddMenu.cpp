@@ -26,5 +26,5 @@ void runMenuOfAddOfStudent()
             << "|--------------------------------------------------|" << endl;
         _getch();
     }
-    clearSList(*list);
+    deleteSList(*list);
 }

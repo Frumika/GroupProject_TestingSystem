@@ -1,4 +1,4 @@
-ï»¿#include <complex.h>
+#include <complex.h>
 
 #include "4-EmPsl-01-Header.h"
 #include <iostream>
@@ -50,7 +50,7 @@ void PrintPodcher(int k,int namel,int surnamel,bool top)
 }
 void print_list(SList list) {
     if (list.head == NULL) {
-        cout << "Ğ¡Ğ¿Ğ¸ÑĞ¾Ğº Ğ¿ÑƒÑÑ‚" << endl;
+        cout << "Ñïèñîê ïóñò" << endl;
         return;
     }
     SortMenu(list);
@@ -59,20 +59,20 @@ void print_list(SList list) {
     int surnamel=MaxLenSurname(list);
     int k=namel+surnamel+(7*8)+12+13+15+2;
     PrintPodcher(k,namel,surnamel,true);
-    cout<< "|"<<setw(2)<<left<<"â„–"<<"|";
+    cout<< "|"<<setw(2)<<left<<"¹"<<"|";
     cout<<setw(2)<<left<<"ID"<<"|";
-    cout<<setw(namel)<<left<<"Ğ˜Ğ¼Ñ"<<"|";
-    cout<<setw(surnamel)<<left<<"Ğ¤Ğ°Ğ¼Ğ¸Ğ»Ğ¸Ñ"<<"|";
-    cout<<setw(7)<<left<<"Ğ¢ĞµÑÑ‚ 1"<<"|";
-    cout<<setw(7)<<left<<"Ğ¢ĞµÑÑ‚ 2"<<"|";
-    cout<<setw(7)<<left<<"Ğ¢ĞµÑÑ‚ 3"<<"|";
-    cout<<setw(7)<<left<<"Ğ¢ĞµÑÑ‚ 4"<<"|";
-    cout<<setw(7)<<left<<"Ğ¢ĞµÑÑ‚ 5"<<"|";
-    cout<<setw(7)<<left<<"Ğ¢ĞµÑÑ‚ 6"<<"|";
-    cout<<setw(7)<<left<<"Ğ¢ĞµÑÑ‚ 7"<<"|";
-    cout<<setw(7)<<left<<"Ğ¢ĞµÑÑ‚ 8"<<"|";
-    cout<<setw(12)<<left<<"Ğ¡Ñ€ĞµĞ´Ğ½Ğ¸Ğ¹ Ğ±Ğ°Ğ»Ğ»"<<"|";
-    cout<<setw(13)<<left<<"Ğ˜Ñ‚Ğ¾Ğ³Ğ¾Ğ²Ñ‹Ğ¹ Ñ‚ĞµÑÑ‚"<<"|"<<endl;
+    cout<<setw(namel)<<left<<"Èìÿ"<<"|";
+    cout<<setw(surnamel)<<left<<"Ôàìèëèÿ"<<"|";
+    cout<<setw(7)<<left<<"Òåñò 1"<<"|";
+    cout<<setw(7)<<left<<"Òåñò 2"<<"|";
+    cout<<setw(7)<<left<<"Òåñò 3"<<"|";
+    cout<<setw(7)<<left<<"Òåñò 4"<<"|";
+    cout<<setw(7)<<left<<"Òåñò 5"<<"|";
+    cout<<setw(7)<<left<<"Òåñò 6"<<"|";
+    cout<<setw(7)<<left<<"Òåñò 7"<<"|";
+    cout<<setw(7)<<left<<"Òåñò 8"<<"|";
+    cout<<setw(12)<<left<<"Ñğåäíèé áàëë"<<"|";
+    cout<<setw(13)<<left<<"Èòîãîâûé òåñò"<<"|"<<endl;
     PrintPodcher(k,namel,surnamel,true);
     int i=0;
     while (tmp->next != nullptr) {
@@ -82,21 +82,21 @@ void print_list(SList list) {
         cout<<setw(namel)<<left<<(tmp->student.name) << "|";
         cout<<setw(surnamel)<<left<<(tmp->student.surname) << "|";
         if(tmp->student.marks[0]){cout<<setw(3)<<left<<""<<setw(4)<<left<<(tmp->student.marks[0])<< "|";}
-        else{cout<<setw(7)<<left<<"ĞĞµ ÑĞ´Ğ°Ğ½"<< "|";}
+        else{cout<<setw(7)<<left<<"Íå ñäàí"<< "|";}
         if(tmp->student.marks[1]){cout<<setw(3)<<left<<""<<setw(4)<<left<<(tmp->student.marks[1])<< "|";}
-        else{cout<<setw(7)<<left<<"ĞĞµ ÑĞ´Ğ°Ğ½"<< "|";}
+        else{cout<<setw(7)<<left<<"Íå ñäàí"<< "|";}
         if(tmp->student.marks[2]){cout<<setw(3)<<left<<""<<setw(4)<<left<<(tmp->student.marks[2])<< "|";}
-        else{cout<<setw(7)<<left<<"ĞĞµ ÑĞ´Ğ°Ğ½"<< "|";}
+        else{cout<<setw(7)<<left<<"Íå ñäàí"<< "|";}
         if(tmp->student.marks[3]){cout<<setw(3)<<left<<""<<setw(4)<<left<<(tmp->student.marks[3])<< "|";}
-        else{cout<<setw(7)<<left<<"ĞĞµ ÑĞ´Ğ°Ğ½"<< "|";}
+        else{cout<<setw(7)<<left<<"Íå ñäàí"<< "|";}
         if(tmp->student.marks[4]){cout<<setw(3)<<left<<""<<setw(4)<<left<<(tmp->student.marks[4])<< "|";}
-        else{cout<<setw(7)<<left<<"ĞĞµ ÑĞ´Ğ°Ğ½"<< "|";}
+        else{cout<<setw(7)<<left<<"Íå ñäàí"<< "|";}
         if(tmp->student.marks[5]){cout<<setw(3)<<left<<""<<setw(4)<<left<<(tmp->student.marks[5])<< "|";}
-        else{cout<<setw(7)<<left<<"ĞĞµ ÑĞ´Ğ°Ğ½"<< "|";}
+        else{cout<<setw(7)<<left<<"Íå ñäàí"<< "|";}
         if(tmp->student.marks[6]){cout<<setw(3)<<left<<""<<setw(4)<<left<<(tmp->student.marks[6])<< "|";}
-        else{cout<<setw(7)<<left<<"ĞĞµ ÑĞ´Ğ°Ğ½"<< "|";}
+        else{cout<<setw(7)<<left<<"Íå ñäàí"<< "|";}
         if(tmp->student.marks[7]){cout<<setw(3)<<left<<""<<setw(4)<<left<<(tmp->student.marks[7])<< "|";}
-        else{cout<<setw(7)<<left<<"ĞĞµ ÑĞ´Ğ°Ğ½"<< "|";}
+        else{cout<<setw(7)<<left<<"Íå ñäàí"<< "|";}
         cout<<setw(5)<<left<<""<<setw(7)<<left<<(tmp->student.middleMark)<< "|";
         if(tmp->student.examStatus)
         {
@@ -104,7 +104,7 @@ void print_list(SList list) {
         }
         else
         {
-            cout<<setw(3)<<left<<""<<setw(10)<<left<<"ĞĞµ ÑĞ´Ğ°Ğ½" << "|"<<endl;
+            cout<<setw(3)<<left<<""<<setw(10)<<left<<"Íå ñäàí" << "|"<<endl;
         }
         PrintPodcher(k,namel,surnamel,false);
         tmp = tmp->next;
@@ -115,22 +115,22 @@ void print_list(SList list) {
     cout<<setw(namel)<<left<<(tmp->student.name) << "|";
     cout<<setw(surnamel)<<left<<(tmp->student.surname) << "|";
     if(tmp->student.marks[0]){cout<<setw(3)<<left<<""<<setw(4)<<left<<(tmp->student.marks[0])<< "|";}
-    else{cout<<setw(7)<<left<<"ĞĞµ ÑĞ´Ğ°Ğ½"<< "|";}
+    else{cout<<setw(7)<<left<<"Íå ñäàí"<< "|";}
         
     if(tmp->student.marks[1]){cout<<setw(3)<<left<<""<<setw(4)<<left<<(tmp->student.marks[1])<< "|";}
-    else{cout<<setw(7)<<left<<"ĞĞµ ÑĞ´Ğ°Ğ½"<< "|";}
+    else{cout<<setw(7)<<left<<"Íå ñäàí"<< "|";}
     if(tmp->student.marks[2]){cout<<setw(3)<<left<<""<<setw(4)<<left<<(tmp->student.marks[2])<< "|";}
-    else{cout<<setw(7)<<left<<"ĞĞµ ÑĞ´Ğ°Ğ½"<< "|";}
+    else{cout<<setw(7)<<left<<"Íå ñäàí"<< "|";}
     if(tmp->student.marks[3]){cout<<setw(3)<<left<<""<<setw(4)<<left<<(tmp->student.marks[3])<< "|";}
-    else{cout<<setw(7)<<left<<"ĞĞµ ÑĞ´Ğ°Ğ½"<< "|";}
+    else{cout<<setw(7)<<left<<"Íå ñäàí"<< "|";}
     if(tmp->student.marks[4]){cout<<setw(3)<<left<<""<<setw(4)<<left<<(tmp->student.marks[4])<< "|";}
-    else{cout<<setw(7)<<left<<"ĞĞµ ÑĞ´Ğ°Ğ½"<< "|";}
+    else{cout<<setw(7)<<left<<"Íå ñäàí"<< "|";}
     if(tmp->student.marks[5]){cout<<setw(3)<<left<<""<<setw(4)<<left<<(tmp->student.marks[5])<< "|";}
-    else{cout<<setw(7)<<left<<"ĞĞµ ÑĞ´Ğ°Ğ½"<< "|";}
+    else{cout<<setw(7)<<left<<"Íå ñäàí"<< "|";}
     if(tmp->student.marks[6]){cout<<setw(3)<<left<<""<<setw(4)<<left<<(tmp->student.marks[6])<< "|";}
-    else{cout<<setw(7)<<left<<"ĞĞµ ÑĞ´Ğ°Ğ½"<< "|";}
+    else{cout<<setw(7)<<left<<"Íå ñäàí"<< "|";}
     if(tmp->student.marks[7]){cout<<setw(3)<<left<<""<<setw(4)<<left<<(tmp->student.marks[7])<< "|";}
-    else{cout<<setw(7)<<left<<"ĞĞµ ÑĞ´Ğ°Ğ½"<< "|";}
+    else{cout<<setw(7)<<left<<"Íå ñäàí"<< "|";}
     cout<<setw(5)<<left<<""<<setw(7)<<left<<(tmp->student.middleMark)<< "|";
     if(tmp->student.examStatus)
     {
@@ -138,7 +138,7 @@ void print_list(SList list) {
     }
     else
     {
-        cout<<setw(3)<<left<<""<<setw(10)<<left<<"ĞĞµ ÑĞ´Ğ°Ğ½" << "|"<<endl;
+        cout<<setw(3)<<left<<""<<setw(10)<<left<<"Íå ñäàí" << "|"<<endl;
     }
     PrintPodcher(k,namel,surnamel,false);
 }
