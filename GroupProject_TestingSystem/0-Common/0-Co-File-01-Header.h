@@ -10,7 +10,7 @@ extern char EDUCATOR_PASSWORD[];
 
 void runMainMenu();
 
-void runStudentLogInMenu();
+// void runStudentLogInMenu();
 
 void runEducatorLogInMenu();
 
