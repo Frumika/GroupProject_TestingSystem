@@ -1,5 +1,6 @@
 ﻿#pragma once
 
+#include "../3-CryptInfo/3-Ci-File-01-Header.h"
 #include "2-Wwql-File-02-Question.h"
 #include "2-Wwql-File-03-QuestionList.h"
 

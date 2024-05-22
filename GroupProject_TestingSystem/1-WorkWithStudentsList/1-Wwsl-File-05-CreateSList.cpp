@@ -32,10 +32,10 @@ SList* createSList()
             for (int i = 0; i < 16; i++)
             {
                 if (i == 0) student.id = stoi(parsedLine[i]);
-                else if (i == 1) student.login = parsedLine[i];
-                else if (i == 2) student.password = parsedLine[i];
-                else if (i == 3) student.name = parsedLine[i];
-                else if (i == 4) student.surname = parsedLine[i];
+                else if (i == 1) student.login = decrypt(parsedLine[i]);
+                else if (i == 2) student.password = decrypt(parsedLine[i]);
+                else if (i == 3) student.name = decrypt(parsedLine[i]);
+                else if (i == 4) student.surname = decrypt(parsedLine[i]);
                 else if (i == 5) student.marks[i-5] = stoi(parsedLine[i]);
                 else if (i == 6) student.marks[i-5] = stoi(parsedLine[i]);
                 else if (i == 7) student.marks[i-5] = stoi(parsedLine[i]);

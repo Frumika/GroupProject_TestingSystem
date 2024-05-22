@@ -1,5 +1,6 @@
 ﻿#pragma once
 
+#include "../3-CryptInfo/3-Ci-File-01-Header.h"
 #include "1-Wwsl-File-02-Student.h"
 #include "1-Wwsl-File-03-StudentsList.h"
 
@@ -22,4 +23,4 @@ void clearSList(SList& list);
 void deleteSList(SList& list);
 
 
-std::string *parseSLine(const std::string &input);
+std::string* parseSLine(const std::string& input);

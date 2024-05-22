@@ -14,10 +14,10 @@ void _editSList(SList& list)
     while (current != nullptr)
     {
         file << "|" << current->student.id;
-        file << "|" << current->student.login;
-        file << "|" << current->student.password;
-        file << "|" << current->student.name;
-        file << "|" << current->student.surname;
+        file << "|" << encrypt(current->student.login);
+        file << "|" << encrypt(current->student.password);
+        file << "|" << encrypt(current->student.name);
+        file << "|" << encrypt(current->student.surname);
         file << "|" << current->student.marks[0];
         file << "|" << current->student.marks[1];
         file << "|" << current->student.marks[2];
