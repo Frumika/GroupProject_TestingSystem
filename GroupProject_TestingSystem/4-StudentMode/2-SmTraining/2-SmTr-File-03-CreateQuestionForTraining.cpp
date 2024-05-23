@@ -26,13 +26,13 @@ void createQuestionForTraining(int start_num)
         {
             do
             {
-                cout << "   Тема: " << myList->head->question.topic << endl;
-                cout << q << "." << myList->head->question.question << endl
+                cout << "|   Тема: " << myList->head->question.topic << endl;
+                cout << "|" <<" "<< q << "." << myList->head->question.question << endl
                      << "|--------------------------------------------------|" << endl
-                     << "1." << myList->head->question.answer_1 << endl
-                     << "2." << myList->head->question.answer_2 << endl
-                     << "3." << myList->head->question.answer_3 << endl
-                     << "4." << myList->head->question.answer_4 << endl
+                     << "| 1." << myList->head->question.answer_1 << endl
+                     << "| 2." << myList->head->question.answer_2 << endl
+                     << "| 3." << myList->head->question.answer_3 << endl
+                     << "| 4." << myList->head->question.answer_4 << endl
                      << "|--------------------------------------------------|" << endl;
 
                 do
@@ -49,15 +49,20 @@ void createQuestionForTraining(int start_num)
                 if (ans_by_user == myList->head->question.rightAnswerId)
                 {
                     cout << "|--------------------------------------------------|" << endl;
-                    cout << "|" << myList->head->question.rightAnswerId << " - Правильный ответ                              |" << endl
+                    cout << "| " << myList->head->question.rightAnswerId << " - Правильный ответ                             |" << endl
                          << "|--------------------------------------------------|" << endl;
                     myList->head = myList->head->next;
                     q++;
+                    
+                    cout << "Нажмите любую клавишу, чтобы продолжить" << endl;
+                    _getch();
+                    system("cls");
                     
                     if (q==11)
                     {
                         cout << "Нажмите любую клавишу, чтобы продолжить" << endl;
                         _getch();
+                        system("cls");
 
                         deleteQList(*myList);
                         runStudentMenu(student);
@@ -68,8 +73,12 @@ void createQuestionForTraining(int start_num)
                 if (ans_by_user != myList->head->question.rightAnswerId)
                 {
                     cout << "|--------------------------------------------------|" << endl;
-                    cout << "|" << ans_by_user << " - Неправильный ответ                            |" << endl                
+                    cout << "| " << ans_by_user << " - Неправильный ответ                           |" << endl                
                          << "|--------------------------------------------------|" << endl;
+
+                    cout << "Нажмите любую клавишу, чтобы продолжить" << endl;
+                    _getch();
+                    
                 }
             }
             while (ans_by_user != myList->head->question.rightAnswerId);
