@@ -18,13 +18,13 @@ void exportQuestionsToFile(const QList& list)
     {
         const Question& q = current->question;
         file << "|" << q.id
-            << "|" << q.topic
-            << "|" << q.question
-            << "|" << q.answer_1
-            << "|" << q.answer_2
-            << "|" << q.answer_3
-            << "|" << q.answer_4
-            << "|" << q.rightAnswer
+            << "|" << encrypt(q.topic)
+            << "|" << encrypt(q.question)
+            << "|" << encrypt(q.answer_1)
+            << "|" << encrypt(q.answer_2)
+            << "|" << encrypt(q.answer_3)
+            << "|" << encrypt(q.answer_4)
+            << "|" << encrypt(q.rightAnswer)
             << "|" << q.rightAnswerId
             << "|\n";
         current = current->next;
