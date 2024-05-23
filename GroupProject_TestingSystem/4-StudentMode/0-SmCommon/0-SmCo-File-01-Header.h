@@ -10,5 +10,3 @@ void runTestMode(Student& student);
 void runExamMode(Student& student);
 
 
-void createQuestionForTraining(int start_num);
-
