@@ -2,7 +2,7 @@
 
 
 // Добавляет элемент в конец двусвязного списка
-void addQNode(QList& list, Question question)
+void addQNode(QList& list, Question& question)
 {
     QNode* node = new QNode;
 
@@ -27,6 +27,7 @@ void addQNode(QList& list, Question question)
         node->prev = current;
 
         node->question.id = current->question.id + 1;
-        node = list.tail;
+        
+        list.tail = node;
     }
 }
