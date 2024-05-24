@@ -1,20 +1,19 @@
 #include "2-EmEq-File-01-Header.h"
 
-bool chechOnExistance(QList* list, std::string NewQuestion)
+bool checkOnExistance(QList* list, const std::string& NewQuestion)
 {
     QNode* Node = list->head;
 
-    while (Node->next != NULL)
+    while (Node != nullptr)
     {
-        if (strcmp(Node->question.question.c_str(), NewQuestion.c_str()))
+        if (Node->question.question == NewQuestion)
         {
-            return 1;
+            return true;
         }
-
         Node = Node->next;
     }
 
-    return 0;
+    return false;
 }
 
 void runAddQ()
@@ -38,7 +37,7 @@ void runAddQ()
     {
         std::getline(std::cin, newQuestion.question);
 
-        condition = chechOnExistance(list, newQuestion.question);
+        condition = checkOnExistance(list, newQuestion.question);
 
         if (condition == 1)
         {
