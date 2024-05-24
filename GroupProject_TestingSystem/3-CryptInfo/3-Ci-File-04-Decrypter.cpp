@@ -10,7 +10,10 @@ string decrypt(string str)
     
     while(cryptEl < str.size())
     {
-        newstr += (224+(unsigned char)str[cryptEl++]-32-(unsigned char)key+32)%224+32;
+        if((((unsigned char)newstr[cryptEl]-32+(unsigned char)key-32)%224+32) == unsigned char(124) ||
+            (((unsigned char)newstr[cryptEl]-32+(unsigned char)key-32)%224+32) == unsigned char(152))
+            newstr += (unsigned char)newstr[cryptEl++];
+        else newstr += (224+(unsigned char)str[cryptEl++]-32-(unsigned char)key+32)%224+32;
     }
     return newstr;
 }

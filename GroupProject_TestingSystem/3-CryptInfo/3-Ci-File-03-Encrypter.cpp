@@ -10,7 +10,8 @@ string encrypt(string rawstr)
     
     while(rawEl < rawstr.size())
     {
-        if((((unsigned char)rawstr[rawEl]-32+(unsigned char)key-32)%224+32) == unsigned char(124))
+        if((((unsigned char)rawstr[rawEl]-32+(unsigned char)key-32)%224+32) == unsigned char(124) ||
+            (((unsigned char)rawstr[rawEl]-32+(unsigned char)key-32)%224+32) == unsigned char(152))
             newstr += (unsigned char)rawstr[rawEl++];
         else newstr += ((unsigned char)rawstr[rawEl++]-32+(unsigned char)key-32)%224+32;
     }
