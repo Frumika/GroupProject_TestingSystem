@@ -64,8 +64,8 @@
     <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-11-ClearQList.cpp" />
     <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-12-DeleteList.cpp" />
     <ClCompile Include="2-WorkWithQuestionsList\2-Wwql-File-13-ParseQLine.cpp" />
-    <ClCompile Include="3-CryptInfo\3-Ci-File-03-Encrypter.cpp" />
-    <ClCompile Include="3-CryptInfo\3-Ci-File-04-Decrypter.cpp" />
+    <ClCompile Include="3-CryptInfo\3-Ci-File-02-Encrypter.cpp" />
+    <ClCompile Include="3-CryptInfo\3-Ci-File-03-Decrypter.cpp" />
     <ClCompile Include="4-StudentMode\0-SmCommon\0-SmCo-File-02-Menu.cpp" />
     <ClCompile Include="4-StudentMode\1-SmLogIn\1-SmLi-File-02-LogIn.cpp" />
     <ClCompile Include="4-StudentMode\1-SmLogIn\1-SmLi-File-03-EnterLogin.cpp" />
