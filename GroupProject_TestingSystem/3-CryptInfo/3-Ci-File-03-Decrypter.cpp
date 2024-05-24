@@ -10,10 +10,13 @@ string decrypt(string str)
     
     while(cryptEl < str.size())
     {
-        if((((unsigned char)newstr[cryptEl]-32+(unsigned char)key-32)%224+32) == unsigned char(124) ||
-            (((unsigned char)newstr[cryptEl]-32+(unsigned char)key-32)%224+32) == unsigned char(152))
-            newstr += (unsigned char)newstr[cryptEl++];
-        else newstr += (224+(unsigned char)str[cryptEl++]-32-(unsigned char)key+32)%224+32;
+        int key = keyword[cryptEl%keyword.size()];
+        unsigned char decrypted_char = (224+(unsigned char)str[cryptEl]-32-key)%224+32;
+        unsigned char encrypted_char = ((unsigned char)str[cryptEl]-32+key)%224+32;
+        // if(encrypted_char == unsigned char(124))
+        //     newstr += (unsigned char)str[cryptEl];
+        newstr += decrypted_char;
+        cryptEl++;
     }
     return newstr;
 }

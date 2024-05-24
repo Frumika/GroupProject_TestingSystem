@@ -10,10 +10,12 @@ string encrypt(string rawstr)
     
     while(rawEl < rawstr.size())
     {
-        if((((unsigned char)rawstr[rawEl]-32+(unsigned char)key-32)%224+32) == unsigned char(124) ||
-            (((unsigned char)rawstr[rawEl]-32+(unsigned char)key-32)%224+32) == unsigned char(152))
-            newstr += (unsigned char)rawstr[rawEl++];
-        else newstr += ((unsigned char)rawstr[rawEl++]-32+(unsigned char)key-32)%224+32;
+        int key = keyword[rawEl%keyword.size()];
+        unsigned char encrypted_char = ((unsigned char)rawstr[rawEl]-32+key)%224+32;
+        if(encrypted_char == unsigned char(124))
+            newstr += (unsigned char)rawstr[rawEl];
+        else newstr += encrypted_char;
+        rawEl++;
     }
     return newstr;
 }
