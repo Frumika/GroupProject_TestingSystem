@@ -1,10 +1,29 @@
 #include "2-EmEq-File-01-Header.h"
 
+bool chechOnExistance(QList* list, std::string NewQuestion)
+{
+    QNode* Node = list->head;
+
+    while (Node->next != NULL)
+    {
+        if (strcmp(Node->question.question.c_str(), NewQuestion.c_str()))
+        {
+            return 1;
+        }
+
+        Node = Node->next;
+    }
+
+    return 0;
+}
+
 void runAddQ()
 {
     QList* list = createQList();
 
     Question newQuestion;
+
+    bool condition;
 
     std::cout
         << "|--------------------------------------------------|\n"
@@ -15,7 +34,19 @@ void runAddQ()
     std::getline(std::cin, newQuestion.topic);
 
     std::cout << "| Введите текст вопроса: ";
-    std::getline(std::cin, newQuestion.question);
+    do
+    {
+        std::getline(std::cin, newQuestion.question);
+
+        condition = chechOnExistance(list, newQuestion.question);
+
+        if (condition == 1)
+        {
+            std::cout << "| Вопросы не должны повторяться.\n"
+                         "| Пожалуйста, введите текст вопроса снова.\n";
+        }
+    }
+    while (condition == 1);
 
     do
     {
@@ -42,7 +73,7 @@ void runAddQ()
         if (!AnswerOptionsCondition) break;
 
         std::cout << "| Варианты ответов должны быть уникальными. "
-                     "| Пожалуйста, введите их снова.\n";
+            "| Пожалуйста, введите их снова.\n";
     }
     while (true);
 
@@ -60,7 +91,7 @@ void runAddQ()
         if (correctAnswerCondition) break;
 
         std::cout << "| Правильный ответ должен совпадать с одним из вариантов."
-                     "| Пожалуйста, введите его снова.\n";
+            "| Пожалуйста, введите его снова.\n";
     }
     while (true);
 
@@ -68,20 +99,19 @@ void runAddQ()
     else if (newQuestion.rightAnswer == newQuestion.answer_2) newQuestion.rightAnswerId = 2;
     else if (newQuestion.rightAnswer == newQuestion.answer_3) newQuestion.rightAnswerId = 3;
     else if (newQuestion.rightAnswer == newQuestion.answer_4) newQuestion.rightAnswerId = 4;
-    
+
     system("cls");
 
     addQNode(*list, newQuestion);
     exportQuestionsToFile(*list);
     deleteQList(*list);
-    
-    std::cout
-    << "|--------------------------------------------------|\n"
-    << "|         >>> Вопрос успешно добавлен <<<          |\n"
-    << "|--------------------------------------------------|\n"
-    << "|--------------------------------------------------|\n"
-    << "|  >>> Для продолжения нажмите любую клавишу <<<   |\n"
-    << "|--------------------------------------------------|\n";
-    char button = _getch();
 
+    std::cout
+        << "|--------------------------------------------------|\n"
+        << "|         >>> Вопрос успешно добавлен <<<          |\n"
+        << "|--------------------------------------------------|\n"
+        << "|--------------------------------------------------|\n"
+        << "|  >>> Для продолжения нажмите любую клавишу <<<   |\n"
+        << "|--------------------------------------------------|\n";
+    char button = _getch();
 }
